@@ -15,7 +15,7 @@ class Config(object):
     ") # ⚠️ Required
 
     # Other Config 
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Request_accept_rBot") # ⚠️ Required
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "@Request_accept_rBot") # ⚠️ Required
     BOT_UPTIME  = time.time()
     OWNER = int(os.environ.get('OWNER', '6049507444')) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002038655597")) # ⚠️ Required
