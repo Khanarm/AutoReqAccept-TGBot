@@ -15,13 +15,13 @@ class Config(object):
     ") # ⚠️ Required
 
     # Other Config 
-    BOT_USERNAME = os.environ.get("BOT_USERNAME", "") # ⚠️ Required
+    BOT_USERNAME = os.environ.get("BOT_USERNAME", "Request_accept_rBot") # ⚠️ Required
     BOT_UPTIME  = time.time()
     OWNER = int(os.environ.get('OWNER', '6049507444')) # ⚠️ Required
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002038655597")) # ⚠️ Required
     APPROVED_WELCOME_TEXT = os.environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYou're Auto Approved. ✅")
     LEAVING_BY_TEXT = os.environ.get("APPROVED_WELCOME_TEXT", "👋 Bye {mention} !\nSee You Soon by {title}\n\nYou Left. ⛔")
-    FORCE_SUB = os.environ.get('FORCE_SUB', '') # ⚠️ Required
+    FORCE_SUB = os.environ.get('FORCE_SUB', 'the_way_you_shine_in_hindi') # ⚠️ Required
     AUTH_CHANNEL = int(FORCE_SUB) if FORCE_SUB and id_pattern.search(
     FORCE_SUB) else None 
 
