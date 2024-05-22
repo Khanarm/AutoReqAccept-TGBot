@@ -6,8 +6,8 @@ id_pattern = re.compile(r'^.\d+$')
 class Config(object):
 
     # Client Config 
-    API_ID = int(os.environ.get('API_ID', '')) # ⚠️ Required
-    API_HASH = os.environ.get('API_HASH', '') # ⚠️ Required
+    API_ID = int(os.environ.get('API_ID', '24168545')) # ⚠️ Required
+    API_HASH = os.environ.get('API_HASH', '56d4f084b51050ed09a0243d8017b756') # ⚠️ Required
     BOT_TOKEN = os.environ.get('BOT_TOKEN', '') # ⚠️ Required
 
     # database config
